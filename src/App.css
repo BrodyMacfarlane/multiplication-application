@@ -1,0 +1,77 @@
+@keyframes input-animation {
+  0% {
+    width: 250px;
+    background-color: #fafafa;
+  }
+  100% {
+    width: 420px;
+    background-color: #FFF;
+  }
+}
+
+.App {
+  color: #3a3a3a;
+  width: 600px;
+  margin: auto;
+  font-family: 'Axis';
+}
+
+div {
+  text-align: center;
+}
+
+.num-display {
+  font-size: 80px;
+  margin-top: 150px;
+}
+
+.x {
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.answer-input {
+  text-align: center;
+  color: #3a3a3a;
+  background-color: #fafafa;
+  width: 250px;
+  font-size: 80px;
+  font-family: 'Axis';
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-bottom: 15px solid #3a3a3a;
+  transition: 0.3s ease-in-out;
+}
+
+.answer-input:focus {
+  width: 420px;
+  animation: input-animation 0.4s ease-in-out;
+  background-color: #FFF;
+}
+
+.timer {
+  font-size : 32px;
+}
+
+.next-multi {
+  margin-top: 30px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.correct {
+  font-size: 36px;
+  height: 60px;
+  color: #37d82b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
